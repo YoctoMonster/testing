@@ -1,0 +1,559 @@
+.
+├── 3rdparty
+│   ├── json
+│   │   └── json.hpp
+│   ├── libpng
+│   │   ├── png.c
+│   │   ├── pngconf.h
+│   │   ├── pngerror.c
+│   │   ├── pngget.c
+│   │   ├── png.h
+│   │   ├── pngmem.c
+│   │   ├── pngpriv.h
+│   │   ├── pngset.c
+│   │   ├── pngtrans.c
+│   │   ├── pngusr.h
+│   │   ├── pngwio.c
+│   │   ├── pngwrite.c
+│   │   ├── pngwtran.c
+│   │   └── pngwutil.c
+│   ├── minizip
+│   │   ├── ioapi.c
+│   │   ├── ioapi.h
+│   │   ├── unzip.c
+│   │   └── unzip.h
+│   ├── tinyxml2
+│   │   ├── tinyxml2.cpp
+│   │   └── tinyxml2.h
+│   └── zlib
+│       ├── adler32.c
+│       ├── crc32.c
+│       ├── crc32.h
+│       ├── deflate.c
+│       ├── deflate.h
+│       ├── infback.c
+│       ├── inffast.c
+│       ├── inffast.h
+│       ├── inffixed.h
+│       ├── inflate.c
+│       ├── inflate.h
+│       ├── inftrees.c
+│       ├── inftrees.h
+│       ├── trees.c
+│       ├── trees.h
+│       ├── uncompr.c
+│       ├── zconf.h
+│       ├── zlib.h
+│       ├── zutil.c
+│       └── zutil.h
+├── build
+│   ├── android
+│   │   ├── android.iml
+│   │   ├── app
+│   │   │   ├── Android.mk
+│   │   │   ├── app.iml
+│   │   │   ├── Application.mk
+│   │   │   ├── build.gradle
+│   │   │   └── src
+│   │   │       └── main
+│   │   │           ├── AndroidManifest.xml
+│   │   │           ├── java
+│   │   │           │   └── app
+│   │   │           │       └── usp
+│   │   │           │           ├── Audio.java
+│   │   │           │           ├── ctl
+│   │   │           │           │   ├── ControlController.java
+│   │   │           │           │   ├── ControlFastForward.java
+│   │   │           │           │   ├── Control.java
+│   │   │           │           │   ├── ControlKeyboard.java
+│   │   │           │           │   ├── ControlKeys.java
+│   │   │           │           │   ├── ControlOverlay.java
+│   │   │           │           │   ├── ControlReplay.java
+│   │   │           │           │   ├── ControlSensor.java
+│   │   │           │           │   └── ControlTouch.java
+│   │   │           │           ├── Emulator.java
+│   │   │           │           ├── FileOpen.java
+│   │   │           │           ├── fs
+│   │   │           │           │   ├── FilenameUtils.java
+│   │   │           │           │   ├── FileSelectorBBB.java
+│   │   │           │           │   ├── FileSelectorFS.java
+│   │   │           │           │   ├── FileSelector.java
+│   │   │           │           │   ├── FileSelectorRZX.java
+│   │   │           │           │   ├── FileSelectorSource.java
+│   │   │           │           │   ├── FileSelectorVtrdos.java
+│   │   │           │           │   └── FileSelectorWOS.java
+│   │   │           │           ├── Main.java
+│   │   │           │           ├── Preferences.java
+│   │   │           │           └── ViewGLES.java
+│   │   │           └── res
+│   │   │               ├── drawable
+│   │   │               │   ├── icon_tab_bbb.xml
+│   │   │               │   ├── icon_tab_file.xml
+│   │   │               │   ├── icon_tab_rzx.xml
+│   │   │               │   ├── icon_tab_vtrdos.xml
+│   │   │               │   ├── icon_tab_wos.xml
+│   │   │               │   ├── joystick_hq.png
+│   │   │               │   ├── joystick.png
+│   │   │               │   ├── keyboard_hq.png
+│   │   │               │   └── keyboard.png
+│   │   │               ├── drawable-hdpi
+│   │   │               │   └── icon.png
+│   │   │               ├── drawable-ldpi
+│   │   │               │   └── icon.png
+│   │   │               ├── drawable-mdpi
+│   │   │               │   └── icon.png
+│   │   │               ├── drawable-xhdpi
+│   │   │               │   └── icon.png
+│   │   │               ├── layout
+│   │   │               │   ├── file_open.xml
+│   │   │               │   └── file_selector_item.xml
+│   │   │               ├── menu
+│   │   │               │   └── menu.xml
+│   │   │               ├── raw
+│   │   │               │   ├── dos513f.rom
+│   │   │               │   ├── service.rom
+│   │   │               │   ├── sos128_0.rom
+│   │   │               │   ├── sos128_1.rom
+│   │   │               │   ├── sos48.rom
+│   │   │               │   └── spxtrm4f.fnt
+│   │   │               ├── values
+│   │   │               │   ├── app_full_screen_theme.xml
+│   │   │               │   ├── arrays.xml
+│   │   │               │   └── strings.xml
+│   │   │               ├── values-es
+│   │   │               │   └── strings.xml
+│   │   │               ├── values-ru
+│   │   │               │   └── strings.xml
+│   │   │               ├── values-uk
+│   │   │               │   └── strings.xml
+│   │   │               ├── values-v19
+│   │   │               │   └── app_full_screen_theme.xml
+│   │   │               └── xml
+│   │   │                   └── preferences.xml
+│   │   ├── build.gradle
+│   │   ├── gradle.properties
+│   │   ├── gradlew
+│   │   ├── gradlew.bat
+│   │   └── settings.gradle
+│   ├── chrome_nacl
+│   │   ├── makefile
+│   │   ├── manifest.json
+│   │   ├── unreal_speccy_portable_128.png
+│   │   ├── unreal_speccy_portable_16.png
+│   │   ├── unreal_speccy_portable_48.png
+│   │   ├── unreal_speccy_portable.html
+│   │   ├── unreal_speccy_portable.js
+│   │   └── unreal_speccy_portable.nmf
+│   ├── cmake
+│   │   ├── CMakeLists.txt
+│   │   └── ios.device.toolchain.cmake
+│   ├── dingoo
+│   │   └── makefile
+│   ├── dingux
+│   │   └── makefile
+│   ├── install
+│   │   ├── ios
+│   │   │   ├── debian
+│   │   │   │   └── DEBIAN
+│   │   │   │       ├── control
+│   │   │   │       └── postinst
+│   │   │   └── make_deb.sh
+│   │   ├── linux
+│   │   │   ├── debian
+│   │   │   │   ├── DEBIAN
+│   │   │   │   │   ├── control
+│   │   │   │   │   ├── postinst
+│   │   │   │   │   └── postrm
+│   │   │   │   └── usr
+│   │   │   │       ├── bin
+│   │   │   │       │   └── unreal-speccy-portable
+│   │   │   │       ├── lib
+│   │   │   │       │   └── unreal-speccy-portable
+│   │   │   │       │       └── unreal_speccy_portable.xpm
+│   │   │   │       └── share
+│   │   │   │           ├── applications
+│   │   │   │           │   └── unreal-speccy-portable.desktop
+│   │   │   │           ├── icons
+│   │   │   │           │   └── hicolor
+│   │   │   │           │       ├── 128x128
+│   │   │   │           │       │   └── apps
+│   │   │   │           │       │       └── unreal_speccy_portable.png
+│   │   │   │           │       ├── 22x22
+│   │   │   │           │       │   └── apps
+│   │   │   │           │       │       └── unreal_speccy_portable.png
+│   │   │   │           │       ├── 24x24
+│   │   │   │           │       │   └── apps
+│   │   │   │           │       │       └── unreal_speccy_portable.png
+│   │   │   │           │       ├── 32x32
+│   │   │   │           │       │   └── apps
+│   │   │   │           │       │       └── unreal_speccy_portable.png
+│   │   │   │           │       ├── 48x48
+│   │   │   │           │       │   └── apps
+│   │   │   │           │       │       └── unreal_speccy_portable.png
+│   │   │   │           │       └── 64x64
+│   │   │   │           │           └── apps
+│   │   │   │           │               └── unreal_speccy_portable.png
+│   │   │   │           └── mime
+│   │   │   │               └── packages
+│   │   │   │                   └── unreal_speccy_portable.xml
+│   │   │   └── make_deb.sh
+│   │   └── windows
+│   │       └── unreal_speccy_portable.bmp
+│   ├── ios
+│   │   ├── Images
+│   │   │   ├── Icon@2x.png
+│   │   │   ├── Icon-72.png
+│   │   │   └── Icon.png
+│   │   ├── makefile
+│   │   ├── Resources
+│   │   │   ├── joystick@2x~ipad.png
+│   │   │   ├── joystick@2x.png
+│   │   │   ├── joystick~ipad.png
+│   │   │   ├── joystick.png
+│   │   │   ├── keyboard@2x~ipad.png
+│   │   │   ├── keyboard@2x.png
+│   │   │   ├── keyboard~ipad.png
+│   │   │   └── keyboard.png
+│   │   └── UnrealSpeccyPortable-Info.plist
+│   ├── linux
+│   │   ├── makefile
+│   │   └── Release
+│   │       ├── 3rdparty
+│   │       │   ├── minizip
+│   │       │   └── tinyxml2
+│   │       ├── devices
+│   │       │   ├── fdd
+│   │       │   ├── input
+│   │       │   └── sound
+│   │       ├── platform
+│   │       │   ├── gl
+│   │       │   ├── oal
+│   │       │   └── wxwidgets
+│   │       ├── snapshot
+│   │       ├── tools
+│   │       └── z80
+│   ├── mac
+│   │   ├── InfoPlist.strings
+│   │   ├── UnrealSpeccyPortable.icns
+│   │   ├── UnrealSpeccyPortable-Info.plist
+│   │   └── usp.xcodeproj
+│   │       └── project.pbxproj
+│   ├── playbook
+│   │   ├── bar
+│   │   │   ├── bar-descriptor.xml
+│   │   │   ├── makefile
+│   │   │   ├── media
+│   │   │   │   ├── 0_key.png
+│   │   │   │   ├── 1_key.png
+│   │   │   │   ├── 3_key.png
+│   │   │   │   ├── a_key.png
+│   │   │   │   ├── A.png
+│   │   │   │   ├── dpad.png
+│   │   │   │   ├── enter_key.png
+│   │   │   │   ├── icon.png
+│   │   │   │   ├── j_key.png
+│   │   │   │   ├── o_key.png
+│   │   │   │   ├── p_key.png
+│   │   │   │   ├── q_key.png
+│   │   │   │   ├── speccy128.png
+│   │   │   │   ├── speccy48.png
+│   │   │   │   ├── x_key.png
+│   │   │   │   ├── z_key.png
+│   │   │   │   └── zxspectrum.png
+│   │   │   └── sdl-controls.xml
+│   │   ├── makefile
+│   │   └── pbcheck.sh
+│   ├── psp
+│   │   ├── icon.png
+│   │   └── makefile
+│   ├── qt
+│   │   ├── res
+│   │   │   └── image
+│   │   │       ├── joystick.png
+│   │   │       └── keyboard.png
+│   │   ├── unreal_speccy_portable.loc
+│   │   ├── unreal_speccy_portable.pro
+│   │   ├── unreal_speccy_portable.qrc
+│   │   └── unreal_speccy_portable.svg
+│   ├── rpi
+│   │   ├── makefile
+│   │   ├── makefile.cross
+│   │   └── Release
+│   │       ├── 3rdparty
+│   │       │   ├── minizip
+│   │       │   └── tinyxml2
+│   │       ├── devices
+│   │       │   ├── fdd
+│   │       │   ├── input
+│   │       │   └── sound
+│   │       ├── platform
+│   │       │   ├── custom_ui
+│   │       │   ├── gles2
+│   │       │   ├── linux
+│   │       │   ├── rpi
+│   │       │   ├── sdl
+│   │       │   └── web
+│   │       ├── snapshot
+│   │       ├── tools
+│   │       │   └── libpng
+│   │       ├── ui
+│   │       └── z80
+│   ├── symbian
+│   │   ├── br.xml
+│   │   ├── config.mk
+│   │   ├── defines.mk
+│   │   ├── makefile
+│   │   ├── pack.pkg
+│   │   ├── unreal_speccy_portable.bmp
+│   │   ├── unreal_speccy_portable.hrh
+│   │   ├── unreal_speccy_portable_mask.bmp
+│   │   ├── unreal_speccy_portable_reg.rss
+│   │   ├── unreal_speccy_portable.rls
+│   │   └── unreal_speccy_portable.rss
+│   └── win
+│       ├── makefile
+│       ├── unreal_speccy_portable.ico
+│       └── unreal_speccy_portable.rc
+├── devices
+│   ├── device.cpp
+│   ├── device.h
+│   ├── fdd
+│   │   ├── fdd.cpp
+│   │   ├── fdd.h
+│   │   ├── wd1793.cpp
+│   │   └── wd1793.h
+│   ├── input
+│   │   ├── kempston_joy.cpp
+│   │   ├── kempston_joy.h
+│   │   ├── kempston_mouse.cpp
+│   │   ├── kempston_mouse.h
+│   │   ├── keyboard.cpp
+│   │   ├── keyboard.h
+│   │   ├── tape.cpp
+│   │   └── tape.h
+│   ├── memory.cpp
+│   ├── memory.h
+│   ├── sound
+│   │   ├── ay.cpp
+│   │   ├── ay.h
+│   │   ├── beeper.cpp
+│   │   ├── beeper.h
+│   │   ├── device_sound.cpp
+│   │   └── device_sound.h
+│   ├── ula.cpp
+│   └── ula.h
+├── files.txt
+├── file_type.cpp
+├── file_type.h
+├── file_type_zip.cpp
+├── LICENSE
+├── options_common.cpp
+├── options_common.h
+├── platform
+│   ├── android
+│   │   ├── android.cpp
+│   │   ├── android_keys.cpp
+│   │   ├── android_sound.cpp
+│   │   └── android_video.cpp
+│   ├── benchmark
+│   │   └── main_benchmark.cpp
+│   ├── chrome_nacl
+│   │   ├── main_nacl.cpp
+│   │   ├── nacl_gamepad.cpp
+│   │   ├── nacl_gl_context.cpp
+│   │   ├── nacl_gl_context.h
+│   │   ├── nacl_keys.cpp
+│   │   ├── nacl_resources.cpp
+│   │   ├── nacl_sound.cpp
+│   │   ├── nacl_sound.h
+│   │   ├── nacl_url.cpp
+│   │   └── nacl_url.h
+│   ├── custom_ui
+│   │   ├── ui_file_open.cpp
+│   │   ├── ui_file_open.h
+│   │   ├── ui_keyboard.cpp
+│   │   ├── ui_keyboard.h
+│   │   ├── ui_main.cpp
+│   │   ├── ui_main.h
+│   │   ├── ui_menu.cpp
+│   │   ├── ui_menu.h
+│   │   ├── ui_profiler.cpp
+│   │   ├── ui_web_browse.cpp
+│   │   └── ui_web_browse.h
+│   ├── dingoo
+│   │   ├── dingoo.cpp
+│   │   ├── dingoo_file_association.cpp
+│   │   ├── dingoo_keys.cpp
+│   │   ├── dingoo_sound.cpp
+│   │   ├── dingoo_timer.cpp
+│   │   ├── dingoo_video.cpp
+│   │   └── io_select_dingoo.cpp
+│   ├── emscripten
+│   │   └── emscripten.cpp
+│   ├── endian.h
+│   ├── gl
+│   │   ├── draw.cpp
+│   │   └── vsync.cpp
+│   ├── gles2
+│   │   ├── gles2.cpp
+│   │   ├── gles2.h
+│   │   ├── gles2_shader.cpp
+│   │   ├── gles2_shader.h
+│   │   ├── gles2_sprite.cpp
+│   │   ├── gles2_sprite.h
+│   │   └── gles2_x.cpp
+│   ├── glut
+│   │   └── main_glut.cpp
+│   ├── io.cpp
+│   ├── io.h
+│   ├── ios
+│   │   ├── application.h
+│   │   ├── application.mm
+│   │   ├── ios.mm
+│   │   ├── touch_tracker.cpp
+│   │   ├── touch_tracker.h
+│   │   ├── view.h
+│   │   ├── view.mm
+│   │   └── web_geturl.mm
+│   ├── linux
+│   │   ├── io_select_linux.cpp
+│   │   └── tick_gtod.h
+│   ├── mac
+│   │   └── mac.cpp
+│   ├── oal
+│   │   └── oal.cpp
+│   ├── platform.cpp
+│   ├── platform.h
+│   ├── playbook
+│   │   └── playbook.cpp
+│   ├── psp
+│   │   ├── io_select_psp.cpp
+│   │   ├── psp.cpp
+│   │   ├── psp_keys.cpp
+│   │   ├── psp_sound.cpp
+│   │   └── psp_video.cpp
+│   ├── qt
+│   │   ├── io_select_qt.cpp
+│   │   ├── main_qt.cpp
+│   │   ├── qt_control.cpp
+│   │   ├── qt_control.h
+│   │   ├── qt_sound.cpp
+│   │   ├── qt_sound.h
+│   │   ├── qt_view.cpp
+│   │   ├── qt_view.h
+│   │   ├── qt_window.cpp
+│   │   └── qt_window.h
+│   ├── rpi
+│   │   └── rpi_video.cpp
+│   ├── sdl
+│   │   ├── sdl.cpp
+│   │   ├── sdl_joystick.cpp
+│   │   ├── sdl_keys.cpp
+│   │   ├── sdl_keys_dingoo.cpp
+│   │   ├── sdl_keys_psp.cpp
+│   │   ├── sdl_sound.cpp
+│   │   └── sdl_video.cpp
+│   ├── symbian
+│   │   ├── division.cpp
+│   │   ├── io_select_symbian.cpp
+│   │   ├── symbian.cpp
+│   │   ├── symbian_gles.cpp
+│   │   ├── symbian_sound.cpp
+│   │   └── tick.h
+│   ├── touch_ui
+│   │   ├── tui_joystick.cpp
+│   │   ├── tui_joystick.h
+│   │   ├── tui_keyboard.cpp
+│   │   └── tui_keyboard.h
+│   ├── web
+│   │   ├── curl.cpp
+│   │   ├── io_select_web.cpp
+│   │   ├── io_web_source_bbb.cpp
+│   │   ├── io_web_source.h
+│   │   ├── io_web_source_rzx.cpp
+│   │   └── io_web_source_vtrdos.cpp
+│   ├── win
+│   │   ├── io_select_win.cpp
+│   │   └── tick_qpc.h
+│   ├── win_mobile
+│   │   ├── win_mobile.cpp
+│   │   └── win_mobile_sound.cpp
+│   └── wxwidgets
+│       ├── main_wx.cpp
+│       ├── wx_canvas.cpp
+│       ├── wx_cmdline.cpp
+│       ├── wx_cmdline.h
+│       ├── wx_frame.cpp
+│       ├── wx_joystick.cpp
+│       ├── wx_joystick.h
+│       ├── wx_keys.cpp
+│       └── wx_mouse.cpp
+├── README
+├── res
+│   ├── font
+│   │   └── spxtrm4f.fnt
+│   └── rom
+│       ├── dos513f.rom
+│       ├── service.rom
+│       ├── sos128_0.rom
+│       ├── sos128_1.rom
+│       ├── sos48.rom
+│       └── test.rom
+├── snapshot
+│   ├── rzx.cpp
+│   ├── rzx.h
+│   ├── screenshot.cpp
+│   ├── snapshot.cpp
+│   ├── snapshot.h
+│   └── snapshot_szx.cpp
+├── speccy.cpp
+├── speccy.h
+├── speccy_handler.cpp
+├── std.h
+├── std_types.h
+├── tools
+│   ├── io_select.h
+│   ├── io_select_zip.cpp
+│   ├── list.h
+│   ├── log.cpp
+│   ├── log.h
+│   ├── options.cpp
+│   ├── options.h
+│   ├── point.h
+│   ├── profiler.cpp
+│   ├── profiler.h
+│   ├── sound_mixer.cpp
+│   ├── sound_mixer.h
+│   ├── stream_memory.h
+│   ├── tick_clock.h
+│   ├── tick.h
+│   ├── time2.h
+│   └── type_registrator.h
+├── ui
+│   ├── ui_button.cpp
+│   ├── ui_button.h
+│   ├── ui_control.cpp
+│   ├── ui_control.h
+│   ├── ui.cpp
+│   ├── ui_desktop.cpp
+│   ├── ui_desktop.h
+│   ├── ui_dialog.cpp
+│   ├── ui_dialog.h
+│   ├── ui.h
+│   ├── ui_list.cpp
+│   └── ui_list.h
+└── z80
+    ├── z80.cpp
+    ├── z80.h
+    ├── z80_op_cb.h
+    ├── z80_opcodes.cpp
+    ├── z80_op_ddcb.h
+    ├── z80_op_dd.h
+    ├── z80_op_ed.h
+    ├── z80_op_fd.h
+    ├── z80_op.h
+    ├── z80_op_noprefix.h
+    ├── z80_op_tables.cpp
+    └── z80_op_tables.h
+
+152 directories, 404 files
