@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UnrealSpeccyPortable>
+    <Options>
+        <last_file>/</last_file>
+        <use_keyboard>on</use_keyboard>
+        <joystick>kempston</joystick>
+        <sound>ay</sound>
+        <sound_chip>ay</sound_chip>
+        <ay_stereo>abc</ay_stereo>
+        <volume>50%</volume>
+        <fast_tape>on</fast_tape>
+        <auto_play_image>on</auto_play_image>
+        <mode_48k>off</mode_48k>
+        <reset_to_service_rom>off</reset_to_service_rom>
+    </Options>
+</UnrealSpeccyPortable>
